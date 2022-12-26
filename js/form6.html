@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form - Page 6</title>
+    <link rel="stylesheet" href="/css/form6.css">
+
+</head>
+<body>
+    <main>
+        <div id="img">
+            <img src="/img/zero6.svg" alt="Happy Zero" >
+        </div>
+
+        <section class="container">
+            <div id="container">
+                <label for=""> Full Name: </label>
+                <textarea id="full-name" required placeholder="Nasser Toghiri" class="text-box" name="" id="" cols="30" rows="10"></textarea>
+                <label for="">Email:</label> 
+                <input type="email" id="email" name="email" required placeholder="N.Toghiri@Gmail.com" class="text-box">
+                <span id="error" style="color: red; text-align: center; padding-top: 2%;"></span>
+                <label for="">Age:</label>
+                <input type="number" oninput="this.value = minMaxValidationFunc(this,this.value)" required placeholder="-- --" id="age" maxlength="3" min="0" max="122"> 
+            </div>
+
+            
+            <div id="buttons">
+                <div class="space">
+                    <a href="/js/form5.html">
+                        <button class="skip" type="button">
+                            Back
+                    </button>
+                    </a>
+                </div>
+            
+                <div class="space">
+                    <a href="/js/form7.html">
+                        <button id="next" class="skip" type="button">
+                            Submit
+                    </button>
+                    </a>
+                </div>
+                
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/form6.js"></script>
+</body>
+</html>
