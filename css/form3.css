@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+
+img{
+  width: 90%;
+  margin: auto;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#container {
+  width: 350px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+    font-size: 1rem ;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 2%;
+    padding-right: 8%;
+
+}
+
+h2 {
+  width: 110%;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 3%;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    background: white;
+    background-image: none;
+    flex: 1;
+    padding: 0;
+    color:#000000;
+    cursor:pointer;
+
+    text-align: center;
+    font-size: 0.95rem;
+    font-family: 'Roboto', sans-serif;
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    margin: auto;
+    position: relative;
+    display: flex;
+    width: 278px;
+    height: 33px;  
+    line-height: 3;
+    background: white;
+    overflow: hidden;
+    border-radius: .25em;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: -7px;
+    left: -8px;
+    padding: 0 1em;
+    color: rgba(62, 178, 94, 0.3);
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #23b499;
+ }
+ .select:hover {
+    border: 1px solid #475242;
+    border-radius: 20px;
+    background: white!important;
+ }
+
+/*--------------------------------------------*/
+
+ /* Customize the label (the container) */
+.container {
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 6%;
+    margin-bottom: 2%;
+
+    cursor: pointer;
+    font-size: 1rem;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .container:hover input ~ .checkmark {
+    background-color: #3EB25E;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: -3px;
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: rgba(62, 178, 94, 0.3);
+    border-radius: 50%;
+    
+  }
+  
+  /* On mouse-over, add a grey background color */
+  
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #3EB25E;
+  }
+
+  #cb-container{
+    width: 80%;
+    padding-bottom: 4%;
+  }
+
+  #checkbox {
+    
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  button { 
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    
+
+    width: 142px;
+    height: 26px;
+    background: #3EB25E;
+    border-radius: 35px;
+    
+
+    border: none;
+}
+
+#buttons{
+
+    flex-wrap: wrap;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    gap: 3%;
+    
+}
+
+#space{
+  padding: 2%;
+}
+
+#skip {
+  
+  width: 295px;
+  height: 26px;
+}
+
+
+button:hover {
+    
+    color: black;
+    transition: 0.5s;
+    background: #FFFF7D;
+
+}
+
+@media screen and (min-width: 1000px){
+
+
+body {
+  width: 90%;
+}
+  
+  main{
+    flex-direction: row;
+    width: 80%;
+
+  }
+
+  img {
+    width: 40vw;
+    min-width: 40vw;
+    
+  }
+
+  
+  #container {
+    
+    width: 80vw;
+    padding-left: 10%;
+  }
+
+
+  button{
+    width: 198px;
+    height: 36px;
+  }
+
+
+  #skip {
+  
+    width: 418px;
+    height: 36px;
+  }
+
+  .select {
+    width: 28.688rem;
+    height: 3.25rem;
+    font-size: 1.375rem;
+  }
+
+  select {
+    font-size: 1.688rem;
+  }
+
+  .select::after{
+    top: -7px;
+    left: -12px;
+  }
+
+  h1 {
+    font-size: 170%;
+    text-align: left;
+    padding-left: 5%;
+  }
+
+  h2 {
+    width: 100%;
+    font-size: 170%;
+    text-align: left;
+  }
+
+  #cb-container{
+    width: 90%;
+  }
+
+  .container {
+    font-size: 1.625rem;
+  }
+
+  .checkmark{
+    top: 8px;
+    left: -3px;
+    height: 1.2rem;
+    width: 1.12rem;
+  }
+}

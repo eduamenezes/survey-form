@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form - Page 3</title>
+    <link rel="stylesheet" href="/css/form3.css">
+
+</head>
+<body>
+      <main>
+        <div id="img">
+            <img  src="/img/zero3.svg" alt="">
+        </div>
+        <section id="container">
+            <h1>What is the status of your account?
+            </h1>
+            <div id="status" class="select">
+                <select name="accountStatus" id="accountStatus">
+                    <option value="accountStatus">I have not created an account yet.</option>
+                    <option value="accountStatus">I created but never used.</option>
+                    <option value="accountStatus">I use the account frequently.</option>
+                </select>
+            </div>
+
+            <div id="cb-container">
+                <h2>In which financial markets do you operate?</h2>
+                <div id="checkbox">
+                    <label class="container"> stock market
+                        <input type="checkbox" name="check" onclick="onlyOne(this)">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container"> foreign exchange
+                        <input type="checkbox" name="check" onclick="onlyOne(this)">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">commodity
+                        <input type="checkbox" name="check" onclick="onlyOne(this)">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container"> bond market
+                        <input type="checkbox" name="check" onclick="onlyOne(this)">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container"> cryptocurrency market
+                        <input type="checkbox" name="check" onclick="onlyOne(this)">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+            <section id="buttons">
+                <a href="/js/form2.html">
+                    <button type="button">
+                     Back
+                    </button>
+                </a>
+                <a href="/js/form4.html">
+                    <button id="next" type="button"  >
+                        Next
+                  </button>
+                </a>
+            
+                <div id="space">
+                    <a href="/js/form4.html">
+                        <button id="skip" type="button">
+                            Skip
+                    </button>
+                    </a>
+                </div>
+                
+            </section>
+        </section>
+      </main>
+      
+      
+
+   <script src="/js/validations.js"></script>
+
+
+</body>
+</html>
